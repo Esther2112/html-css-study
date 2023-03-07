@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+
+        *이름 : <input type="text" value="홍길동" readonly><br>
+        <!-- 논리속성 : readonly 등, 속성 이름만 입력하고 값을 필요로 하지 않음. 
+            입력시 true, 생략시 false -->
+        *패스워드 : <input type="password"><br>
+        *이메일 : <input type="email" placeholder="aaa@bbb.com"><br> 
+            <!-- type="email" : @포함인지 검증기능을 포함 -->
+        *취미 : 
+        <input type="checkbox"> 게임
+        <input type="checkbox" disabled> 축구
+        <input type="checkbox" checked> 낮잠 <br>
+        <!-- 체크박스는 다중체크가 가능 -->
+        <!-- checked : 초기값을 체크된 상태로 세팅함 -->
+        <!-- disabled : 체크박스 비활성화 상태 -->
+
+        # 메일 수신 여부 :
+        <input type="radio" name = "mail" checked> 예
+        <input type="radio" name = "mail"> 아니오 <br>
+        <!-- radio 속성이 제대로 동작하려면 속성을 지정하여 한 그룹으로 묶어줘야 한다 -->
+        
+        # 주문 수량 :
+        <input type="number" max="10" min="0" value="1">
+        <input type="range" min="0" max="5" value="3"><br>
+
+        # 파일 :
+        <input type="file" multiple><br>
+        <!-- multiple : 한번에 파일 여러개 선택 가능 -->
+        
+        <!-- 사용자 몰래 서버로 보내야 하는 데이터 -->
+        <input type="hidden" name="nickname" value="바보">
+        <br>
+        <button type="button">그냥 버튼</button>
+        <button type="reset">입력값 초기화 버튼</button>
+        <button type="submit">서버 전송 버튼</button>
+        <!-- 실무에서는 submit을 바로 사용하는 경우는 드물고, 
+            buttom 클릭시 검사 후 서버로 넘어가도록 스크립트를 짠다 -->
+
+    </form>
+
+</body>
+</html>
