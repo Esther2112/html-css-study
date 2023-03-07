@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+
+        <input type="text"
+            name = "nick"
+            value = "홍길동"
+            disabled>
+            <!-- disabled vs readonly
+                readonly는 사용자가 수정은 불가능하지만 서버에 값을 전송
+                disabled는 값이 전송되지 않는다 -->
+
+        <select name = "coffee">
+            <option value = "아메리카노">Americano</option>
+            <option value = "카페라떼" selected>Caffe Latte</option>
+            <option value = "카푸치노" disabled>Cappuccino</option>
+        </select>
+        <!-- 사용자에게 보이는 값과 서버에 넘기는 값을 다르게 설정하고 싶을때 속성으로 value 설정 -->
+        <button>확인</button>
+
+    </form>
+
+</body>
+</html>

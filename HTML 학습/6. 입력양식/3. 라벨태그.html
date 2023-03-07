@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="#">
+        <label>
+        <input type="checkbox">자동 로그인
+        </label>
+    </form>
+    <!-- checkbox와 텍스트를 label로 감싸서 페어로 만든다. 
+        자동로그인 텍스트를 클릭해도 checkbox가 선택된다. -->
+
+    <input type="checkbox" id="remember"> <br>
+
+    <label>
+        # 이름 : <input type="text">
+    </label>
+    <!-- 이름 텍스트를 클릭해도 input입력란에 포커스 -->
+
+    <!-- div{안녕}*5 -->
+    <div>안녕</div>
+    <div>안녕</div>
+    <div>안녕</div>
+    <div>안녕</div>
+    <div>안녕</div>
+
+    <label for="remember">아이디 기억하기</label>        
+    <!-- 페어로 만들어주고자 하는 두 태그가 멀리 떨어져 있는 경우 for 속성으로 묶어주기 
+        마찬가지로 아이디 기억하기 텍스트를 클릭하면 페어인 checkbox가 선택된다.-->
+</body>
+</html>
