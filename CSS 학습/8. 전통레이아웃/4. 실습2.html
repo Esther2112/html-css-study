@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../common.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        section {
+            width: 750px;
+            margin: 50px auto;
+            border: 3px double #000;
+        }
+        section .header {
+            height: 70px;
+            font-family: '궁서체', serif;
+            font-size: 35px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 70px;
+            background: lightgray;
+        }
+        section .sum {
+            text-align: center;
+            color: #ffffff;
+            background: #353535;
+            font-size: 17px;
+            height: 30px;
+            line-height: 30px;
+        }
+        section .sum span {
+            color: yellow;
+            font-size: 1.1em;
+        }
+        section .container {
+            background: gray;
+        }
+        section .container .box {
+            float: left;
+            width: 23.75%;
+            height: 295px;
+            margin: 20px 0 20px 1%;
+            border: 1px solid rgb(211, 211, 211, 0.8);
+        }
+        section .container .box .frame {
+            width: 165px;
+            height: 140px;
+            margin: 5px auto;
+            border: 1px solid  rgb(211, 211, 211, 0.8);
+        }
+        section .container .box .detail {
+            width: 80%;
+            margin: 15px auto;
+            font-size: 0.8em;
+            font-weight: 700;
+            line-height: 20px;
+            /* background: skyblue; */
+        }
+        section .container .box#box1 {
+            background: rgba(255, 0, 0, 0.888);
+        }
+        section .container .box#box1 .frame{
+            background-image: url("../../img/tulip.jpg");
+            background-size: cover;
+        }
+
+        section .container .box#box2 {
+            background: rgb(255, 26, 255);
+        }
+        section .container .box#box2 .frame{
+            background-image: url("../../img/jebi.jpg");
+            background-size: cover;
+        }
+        section .container .box#box3 {
+            background: rgb(255, 98, 7);
+        }
+        section .container .box#box3 .frame {
+            background-image: url("../../img/hobak.jpg");
+            /* x축 y축 위치 픽셀 지정, + 값은 하,우 - 값은 상,좌로 이동 */
+            background-position: -25px center;
+            background-size: cover;
+
+        }
+        section .container .box#box4 {
+            background: yellow;
+        }
+        section .container .box#box4 .frame{
+            background-image: url("../../img/sunflower.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class = "header">
+            <h1>나의 아름다운 정원</h1>
+        </div>
+        <div class = "sum"><h2>사람들은 아마 자신에게 <span>자신감을 복돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2></div>
+        <div class = "container clearfix">
+            <div class = "box" id = "box1">
+                <div class = "frame"></div>
+                <div class = "detail">너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                    붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</div>
+            </div>
+            <div class = "box" id = "box2">
+                <div class = "frame"></div>
+                <div class = "detail">드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                    어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.</div>
+            </div>
+            <div class = "box" id = "box3">
+                <div class = "frame"></div>
+                <div class = "detail">색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                    매우 완숙한 이미지를 풍기는 꽃이다.</div>
+            </div>
+            <div class = "box" id = "box4">
+                <div class = "frame"></div>
+                <div class = "detail">태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                    속하며 송이가 적어야 제격이다.</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
