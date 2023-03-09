@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 550px;
+            height: 350px;
+            border: 4px dashed gray;
+            margin: 50px auto 0;
+
+            /* 배경속성 */
+            background-color: orange;
+            /* img태그를 하면 overflow를 한번더 설정해줘야 하지만
+                background-image는 hidden 속성을 이미 가지고 있음 */
+            background-image: url("../../img/sky.jpg");
+            /* 그림이 잘리는게 싫다면 이미지 크기를 조정하여 삽입 가능 */
+            /*               가로  세로 */
+            background-size: 400px 300px;
+            background-repeat: no-repeat;
+            /* 가로 세로 조정 가능 */
+            /* background-position: right top; */
+            background-position: center;
+            /* background 속성 한번에 세팅하기 */
+            /* 순서는 상관없지만 /를 기준으로 앞이 위치 뒤가 이미지 사이즈 */
+            background: url("../../img/sky.jpg") orange no-repeat 
+                20px 100px / 400px 300px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
