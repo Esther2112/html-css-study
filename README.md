@@ -19,6 +19,7 @@
 4. auto rename tag : 태그 이름 바꿀 때 자동변환
 5. live server : 실시간 코드 변경 적용
 - 실행법 : html문서 에디터부분 우클릭 -> Open with live server
+- 파일에 자동저장 틱 되어 있어야 함
 6. beautyfy : 코드 들여쓰기 내어쓰기 줄맞춤
 - 설정법 : 파일 -> 기본설정 -> 바로카기 키
 - Hooky 검색 후 beautyfy file 단축키 : Ctrl + Alt + L로 지정

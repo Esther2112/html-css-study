@@ -18,3 +18,11 @@ a {
     display: block;
     clear: both;
 }
+/* 박스 좌우 상하 정중앙 배치 공식 */
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* 기준박스의 정중앙에 위치하게 됨 */
+}
