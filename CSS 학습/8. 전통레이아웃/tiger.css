@@ -1,0 +1,76 @@
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+body {
+    background: gray;
+}
+div#wrapper {
+    width: 800px;
+    margin: 0 auto;
+
+}
+div#wrapper header {
+ background: #0a2f51;
+}
+div#wrapper header h1 {
+    color: rgb(201, 201, 0);
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 50px 30px;
+}
+div#wrapper header h1 strong {
+    color: #ffffff;
+    font-size: 3em;
+}
+div#wrapper header h1 span {
+    font-size: 1.5em;
+}
+div#wrapper header h1 em {
+    color: #ffffff;
+    font-size: 2em;
+}
+div#wrapper .container {
+    font-size: 13px;
+}
+div#wrapper .container .menu {
+    width: 20%;
+    float: left;
+    background: rgb(203, 203, 203);
+    padding: 15px 10px;
+    box-sizing: border-box;
+    height: 461px;
+}
+div#wrapper .container .menu li {
+   margin: 15px;
+}
+div#wrapper .container .menu li a {
+    color: black;
+}
+div#wrapper .container .content {
+    width: 80%;
+    float: left;
+}
+div#wrapper .container .content h2 {
+    background: rgb(137, 1, 1);
+    color: yellow;
+    font-size: 1.7em;
+    font-family: '궁서체', serif;
+    font-weight: 700;
+    line-height: 2em;
+    padding: 0 20px;
+}
+div#wrapper .container .content p {
+    background: #ffffff;
+    padding: 20px;
+    line-height: 1.5em;
+}
+div#wrapper footer {
+    background: rgb(172, 172, 172);
+    font-size: 0.9em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-indent: 20px;
+}
