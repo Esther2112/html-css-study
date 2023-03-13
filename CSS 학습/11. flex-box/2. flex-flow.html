@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 4px solid #000;
+            padding: 20px;
+            display: flex;
+            /* nowrap : item들이 한 줄을 유지함 */
+            flex-wrap: wrap;
+            /* row : 왼쪽정렬, row-reverse : 오른쪽 정렬 */
+            /* column : 플렉스 수평배치 해제 */
+            flex-direction: row;
+
+            /* 단축속성 */
+            /* flex-flow: wrap row-reverse; */
+        }
+        .item {
+            width: 150px;
+            height: 100px;
+            border: 4px solid red;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>
